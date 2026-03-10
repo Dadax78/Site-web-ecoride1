@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>ECORIDE</title>
+</span>
+</div>
+    <link rel="stylesheet" type="text/css" href="styles (page index.html).css">
+
+
+<body>
+<html>
+  <button class="bouton-3 button-hover">
+    <img src="file:///C:/Users/GIGABYTE/Downloads/people-icon-vector-illustration-removebg-preview.png" alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+   <a href="création de compte.html" style="color: rgb(255, 255, 255);" class="lien">Creation de compte</a></button></div>
+
+    <button class="bouton-4 button-hover"> 
+        <img src="file:///C:/Users/GIGABYTE/Downloads/png-clipart-magnifying-glass-computer-icons-magnifier-symbol-magnifying-glass-glass-text-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+    <a href="vue des covoiturages.html" style="color: rgb(255, 255, 255);" class="lien">Trouver Un Covoiturage</a></button></div>
+
+    <button class="bouton-5 button-hover">
+        <img src="file:///C:/Users/GIGABYTE/Downloads/people-icon-vector-illustration-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+        <a href="Mentions légales.html" style="color: rgb(255, 255, 255);" class="lien">NN</a></button></div>
+
+        <button class="bouton-6 button-hover">
+            <img src="file:///C:/Users/GIGABYTE/Downloads/people-icon-symbol-sign-vector-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+            <a href="espace employé.html" style="color: rgb(255, 255, 255);" class="lien">Espace Employé</a></button></div>
+
+            <button class="bouton-7 button-hover">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.sVVB9SERkuOQQNu3XP2uFAHaJi?pid=Api&P=0&h=180"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+               <a href="création de compte.html"style="color: rgb(255, 255, 255);" class="lien"></a></button></div>
+
+               <button class="bouton-8 button-hover">   
+                <img src="https://vectorified.com/images/participation-icon-16.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                <a href="participer à un covoiturage.html"   style="color: rgb(255, 255, 255);" class="lien">participer à un covoiturage</a></button></div> 
+
+                <button class="bouton-9 button-hover">
+                    <img src="file:///C:/Users/GIGABYTE/Downloads/people-icon-vector-illustration-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <a href="contact.html" style="color: rgb(255, 255, 255);" class="lien">contact</a></button></div>
+
+                    <button class="bouton-10 button-hover">
+                        <img src="file:///C:/Users/GIGABYTE/Downloads/421-4217393_administrator-logo-clipart-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                       <a href="espace administrateur.html" style="color: rgb(255, 255, 255);" class="lien">Espace Administrateur</button></div>
+
+                       <button class="bouton-11 button-hover">
+                        <img src="https://icones.pro/wp-content/uploads/2022/03/historique-icone-de-l-historique-verte.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                        <a href="Historique des covoiturages.html" style="color: rgb(255, 255, 255);" class="lien">Historique des covoiturages</a></button></div>
+
+                        <button class="bouton-12 button-hover">
+                            <img src="file:///C:/Users/GIGABYTE/Downloads/people-icon-vector-illustration-removebg-preview.png"alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                            <a href="Espace utilisateur.html" style="color: rgb(255, 255, 255);" class="lien">Espace utilisateur</a></button></div>
+
+
+
+  <div id="map"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+  <script src="script.js"></script>
+
+<img src ="file:///C:/Users/GIGABYTE/Pictures/ecoride-2.jpg" height="300" height="300" 
+<center><h1>Le Covoiturage le plus Ecologique et Libre</h1><center>
+
+<img src="https://images.bfmtv.com/ajgzjvRYrnfQ7M5ATFCCADZ-mQE=/0x147:1408x939/1280x0/images/Voie-covoiturage-A48-404192.jpg" style="width: 100%; height: auto;">
+
+         
+</head>
+<body>
+
+    
+        <!-- Formulaire pour saisir un voyage -->
+        <main class="container mt-5">
+            <h 1 class="text-center mb-4"></h1>Saisir un Voyage</h1>
+    
+            <form id="tripForm">
+                <div class="mb-3">
+                    <label for="departure" class="form-label">Recherche d'itinéraire</label>
+                    <input type="text" class="form-control" id="departure" placeholder="Ex : Paris" required>
+                </div>
+                <div class="mb-3">
+                    <label for="arrival" class="form-label">Départ </label>
+                    <input type="text" class="form-control" id="arrival" placeholder="Ex : Lyon" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Destination</label>
+                    <input type="number" class="form-control" id="price" placeholder="Ex : 20" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Prix</label>
+                    <input type="number" class="form-control" id="price" placeholder="Ex : 20" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="vehicle" class="form-label">Véhicule</label>
+                    <select id="vehicle" class="form-select" required>
+                        <option value="">Sélectionner un véhicule</option>
+                        <!-- Liste des véhicules déjà associés à l'utilisateur -->
+                        <option value="Tesla Model 3">Tesla Model 3</option>
+                        <option value="Peugeot 208">Peugeot 208</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Saisir le voyage</button>
+            </form>
+        </main>
+    
+        <!-- Pied de page -->
+        <footer class="text-center bg-dark text-white py-4 mt-5">
+            <p>Contactez-nous : <a href="mailto:contact@ecoride.com" class="text-info">contact@ecoride.com</a></p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+<body>
+<html>

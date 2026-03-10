@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Covoiturages</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">EcoRide</a>
+        </div>
+    </nav>
+
+</head>
+<body>
+   
+<div class="mb-4">
+    <h3>Filtres</h3>
+    <form id="filtersForm" class="row g-3">
+        <div class="col-md-3">
+            <label for="ecological" class="form-label">Voyage écologique</label>
+            <select id="ecological" class="form-select">
+                <option value="">Tous</option>
+                <option value="electric">Voiture électrique</option>
+                <option value="non-electric">Autres</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="maxPrice" class="form-label">Prix maximum (€)</label>
+            <input type="number" id="maxPrice" class="form-control" min="0" placeholder="Ex : 20">
+        </div>
+        <div class="col-md-3">
+            <label for="maxDuration" class="form-label">Durée maximum (h)</label>
+            <input type="number" id="maxDuration" class="form-control" min="0" placeholder="Ex : 3">
+        </div> 
+        <div class="col-md-3">
+            <label for="minRating" class="form-label">Note minimale</label>
+            <select id="minRating" class="form-select">
+                <option value="">Toutes</option>
+                <option value="4">4★ et plus</option>
+                <option value="3">3★ et plus</option>
+                <option value="2">2★ et plus</option>
+            </select>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" class="btn btn-success">Appliquer les filtres</button>
+           <script src="script2_page_vue_covoiturages.js"></script>
+
+        </div>
+    </form>
+</div>
+
+<img src="https://tse1.mm.bing.net/th/id/OIP.-rvbFdzAgjS3rbowZ6KdqgHaE8?pid=Api&P=0&h=180" center width="1050" height="auto">
+<img src="file:///C:/Users/GIGABYTE/Documents/Olivier%20Guid%20covoiturage.png">
+
+<link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/VLYYh9pk/covoiturage-Jean-dupont-image.jpg" class="img-fluid rounded-start" alt="Photo du chauffeur">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Jean Dupont (5★)</h5>
+                        <p class="card-text"><strong>Départ :</strong> Paris</p>
+                        <p class="card-text"><strong>Arrivée :</strong> Marseille</p>
+                        <p class="card-text"><strong>Date :</strong> 2024-11-25</p>
+                        <p class="card-text"><strong>Prix :</strong> 10€</p>
+                        <p class="card-text"><strong>Durée :</strong> 1h00</p>
+                        <p class="card-text"><small class="text-muted">Voiture électrique 🌱 : Tesla Model 3 (2021 )</small></p>
+                        <p class="card-text"><strong>Préférences :</strong> Non-fumeur, animaux sous controle du passager autorisés.</p>
+                        <a href="Vue détaillée d’un covoiturage-Jean Dupont.html" class="btn btn-primary">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/QMKRRtQG/covoiturage-Olivier-Guird-image.jpg" width="60%" height="60%" class="img-fluid rounded-start" alt="Photo du chauffeur">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Olivier Guird (5★)</h5>
+                        <p class="card-text"><strong>Départ :</strong> Marseille</p>
+                        <p class="card-text"><strong>Arrivée :</strong> Nice</p>
+                        <p class="card-text"><strong>Date :</strong> 2024-11-25</p>
+                        <p class="card-text"><strong>Prix :</strong> 10€</p>
+                        <p class="card-text"><strong>Durée :</strong> 1h00</p>
+                        <p class="card-text"><small class="text-muted">Voiture électrique 🌱 :  Tesla Model S (2021)</small></p>
+                        <a href="Vue détaillée d’un covoiturage-Olivier Guird !.html" class="btn btn-primary">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<body>
+<html>

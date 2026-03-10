@@ -1,0 +1,101 @@
+<!-- Formulaire de filtres -->
+<div class="container mt-4">
+    <h3>Filtres</h3>
+    <form id="filterForm" class="row g-3 mb-4">
+        <!-- Aspect écologique -->
+        <div class="col-md-3">
+            <label for="ecologicalFilter" class="form-label">Voyage écologique</label>
+            <select id="ecologicalFilter" class="form-select">
+                <option value="">Tous</option>
+                <option value="electric">Voiture électrique</option>
+                <option value="non-electric">Autres</option>
+            </select>
+        </div>
+        <!-- Prix maximum -->
+        <div class="col-md-3">
+            <label for="maxPriceFilter" class="form-label">Prix maximum (€)</label>
+            <input type="number" id="maxPriceFilter" class="form-control" placeholder="Ex : 20">
+        </div>
+        <!-- Durée maximum -->
+        <div class="col-md-3">
+            <label for="maxDurationFilter" class="form-label">Durée maximum (h)</label>
+            <input type="number" id="maxDurationFilter" class="form-control" placeholder="Ex : 3">
+        </div>
+        <!-- Note minimale -->
+        <div class="col-md-3">
+            <label for="minRatingFilter" class="form-label">Note minimale</label>
+            <select id="minRatingFilter" class="form-select">
+                <option value="">Toutes</option>
+                <option value="5">5★</option>
+                <option value="4">4★ et plus</option>
+                <option value="3">3★ et plus</option>
+            </select>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" class="btn btn-success">Appliquer les filtres</button>
+        </div>
+    </form>
+</div>
+<script>
+// Données fictives pour simuler des résultats de covoiturages
+const sampleResults = [
+    { id: 1, eco: "electric", price: 15, duration: 2, rating: 5, driver: "Jean", departure: "Ville A", arrival: "Ville B" },
+    { id: 2, eco: "non-electric", price: 10, duration: 3, rating: 4, driver: "Marie", departure: "Ville C", arrival: "Ville D" },
+    { id: 3, eco: "electric", price: 20, duration: 1.5, rating: 3, driver: "Alex", departure: "Ville E", arrival: "Ville F" },
+];
+document.getElementById('filterForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Empêche le rechargement de la page
+
+    const ecological = document.getElementById('ecologicalFilter').value;
+    const maxPrice = parseFloat(document.getElementById('maxPriceFilter').value);
+    const maxDuration = parseFloat(document.getElementById('maxDurationFilter').value);
+    const minRating = parseInt(document.getElementById('minRatingFilter').value);
+
+    // Filtrage des résultats
+    const filteredResults = sampleResults.filter(result => {
+        return (
+            (ecological ? result.eco === ecological : true) &&
+            (maxPrice ? result.price <= maxPrice : true) &&
+            (maxDuration ? result.duration <= maxDuration : true) &&
+            (minRating ? result.rating >= minRating : true)
+        );
+    });
+
+    // Affichage des résultats filtrés
+    displayResults(filteredResults);
+});
+
+function displayResults(results) {
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = ''; // Vider les anciens résultats
+
+    if (results.length === 0) {
+        // Afficher un message si aucun résultat
+        resultsContainer.innerHTML = '<div class="alert alert-warning">Aucun covoiturage ne correspond à vos critères.</div>';
+    } else {
+        // Créer une carte pour chaque résultat
+        results.forEach(result => {
+            const card = `
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="driver_photo.jpg" class="img-fluid rounded-start" alt="${result.driver}">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">${result.driver} (${result.rating}★)</h5>
+                                <p class="card-text">Départ : <strong>${result.departure}</strong></p>
+                                <p class="card-text">Arrivée : <strong>${result.arrival}</strong></p>
+                                <p class="card-text">Durée : <strong>${result.duration}h</strong></p>
+                                <p class="card-text">Prix : <strong>${result.price}€</strong></p>
+                                <p class="card-text"><small class="text-muted">Voiture ${result.eco === 'electric' ? 'électrique 🌱' : 'non électrique'}</small></p>
+                                <button class="btn btn-primary">Détails</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsContainer.innerHTML += card;
+        });
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des Covoiturages - EcoRide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">EcoRide</a>
+        </div>
+    </nav>
+
+    <!-- Historique des covoiturages -->
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Mon Historique de Covoiturages</h1>
+
+        <!-- Liste des covoiturages passés -->
+        <div id="rideHistory">
+            <!-- Exemple de carte pour un covoiturage -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://www.jensenfleet.ie/wp-content/uploads/2019/10/tesla-model-3-by-novitec-lead-image.jpg" class="img-fluid rounded-start" alt="Véhicule">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Covoiturage du 2024-11-20</h5>
+                            <p><strong>Départ :</strong> Paris</p>
+                            <p><strong>Arrivée :</strong> Lyon</p>
+                            <p><strong>Prix payé :</strong> 15€</p>
+                            <p><strong>Véhicule :</strong> Tesla Model 3</p>
+                            <p><strong>Évaluation :</strong> 4.5★</p>
+                            <a href="#" class="btn btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Si aucun historique -->
+            <div id="noHistory" class="alert alert-info" style="display: none;">
+                Vous n'avez pas encore de covoiturage dans votre historique.
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="text-center bg-dark text-white py-4 mt-5">
+        <p>Contactez-nous : <a href="mailto:contact@ecoride.com" class="text-info">contact@ecoride.com</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

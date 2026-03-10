@@ -1,0 +1,60 @@
+<c<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Administrateur - EcoRide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">EcoRide</a>
+        </div>
+    </nav>
+
+    <!-- Espace Administrateur -->
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Espace Administrateur</h1>
+
+        <!-- Gestion des utilisateurs -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Gérer les Utilisateurs</h5>
+                <button class="btn btn-primary" onclick="viewUsers()">Voir les utilisateurs</button>
+                <button class="btn btn-danger" onclick="suspendUser()">Suspendre un utilisateur</button>
+            </div>
+        </div>
+
+        <!-- Gestion des employés -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Gérer les Employés</h5>
+                <button class="btn btn-primary" onclick="viewEmployees()">Voir les employés</button>
+                <button class="btn btn-danger" onclick="suspendEmployee()">Suspendre un employé</button>
+            </div>
+        </div>
+
+        <!-- Statistiques des covoiturages -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Statistiques des Covoiturages</h5>
+                <button class="btn btn-info" onclick="viewStats()">Voir les statistiques</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="text-center bg-dark text-white py-4 mt-5">
+        <p>Contactez-nous : <a href="mailto:contact@ecoride.com" class="text-info">contact@ecoride.com</a></p>
+    </footer>
+  
+    <script src="Script 9 ( espace administrateur).js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
+

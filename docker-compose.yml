@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  node:
+    build: ./node
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./node:/app
+
+  php:
+    build: ./php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./php/public:/var/www/html

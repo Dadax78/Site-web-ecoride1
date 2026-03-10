@@ -1,0 +1,392 @@
+ @font-face {
+    font-family: 'Devant-Medium';
+    src: url('C:/Users/GIGABYTE/Documents/Devant-Medium.ttf') format('opentype');
+}
+
+body {
+    font-family: 'Devant-Medium.ttf', sans-serif;
+
+}
+
+     <font-size font-size: 16px;{
+    }  
+     body{
+    background-color: #ffffff; 
+    color: #129700;
+} 
+
+
+.bouton {
+    position: absolute;
+    top: 30px; 
+    left: 250px;c
+    style="font-family: 'Devant-Medium.ttf', Arial, sans-serif;">
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover {
+    transition: transform 0.3s ease;
+}
+
+.button-hover:hover {
+    transform: scale(1.1);
+}
+
+
+.bouton-2 {
+    position: absolute;
+    top: 30px; 
+    left:350px;+
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22ff22;
+    color: #4fff2b;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover-2 {
+    transition: transform 0.3s ease;
+}
+
+.button-hover-2.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-3 {
+    position: absolute;
+    top: 30px; 
+    left: 1670px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22fd22;
+    color: #50f030;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container-2:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-4 {
+    position: absolute;
+    top: 30px; 
+    left:400px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1cff1c;
+    color: #4cff28;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+.bouton-5 {
+    position: absolute;
+    top: 30px; 
+    left:798px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #23fc23;
+    color: hsl(110, 100%, 59%);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-6 {
+    position: absolute;
+    top: 30px; 
+    left: 1000px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2aff2a;
+    color: #3ae419;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-7 {
+    position: absolute;
+    top: 30px; 
+    left: 1340px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25ff25;
+    color: #41ff1c;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-8 {
+    position: absolute;
+    top: 30px; 
+    left: 588px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34ff34;
+    color: #4fff2b;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+
+.bouton-9 {
+    position: absolute;
+    top: 30px; 
+    left: 790px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #37ff37;
+    color: #54ff32;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+.bouton-10 {
+    position: absolute;
+    top: 30px; 
+    left: 1190px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3dff3d;
+    color: #5fff3f;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+
+    .bouton-11 {
+    position: absolute;
+    top: 30px; 
+    left:  1410px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4dfd4d;
+    color: #73ff57;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+.image-container:hover::before {
+    opacity: 1; 
+}
+.button-hover{
+    transition: transform 0.3s ease;
+}
+
+.button-hover.hover: {
+    transform: scale(1.1);
+}
+
+
+h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .image-positionee {
+    position: absolute;
+    top: 100px; 
+    left: 100px
+    font-family: 'Devant-Medium.ttf', Arial, sans-serif;">
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006d00;
+    color: #157c00;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+}
+.image-relative-3 {
+ ; /* Permet à l'image de rester en place même en défilant */
+    bottom:300px; /* Positionne l'image en bas */
+    right: 15000px; /* Positionne l'image à droite */
+}
+.bouton-12 {
+    position: absolute;
+    top: 30px; 
+    left: 800px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6bff6b;
+    color: #89ff71;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+<style>
+  footer { 45
+    background-color: #00ff22; /* Couleur de fond du bas de page */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #333; /* Couleur du texte */
+  }
+
+  footer a {
+    color: #007bff; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement sur les liens */
+  }
+
+  footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto; /* Centrer le contenu */
+  }
+  img-positionee-1{
+  left
+}
+
+/* Pour les grands écrans (plus de 1200px) */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 16px; /* Ajuste la taille de la police pour les grands écrans */
+    }
+    .container {
+        width: 80%;  /* Réduit la largeur du conteneur pour éviter un texte trop large */
+        margin: 0 auto; /* Centre le conteneur */
+    }
+}
+
+/* Pour les écrans moyens (entre 768px et 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 14px; /* Ajuste la taille de la police pour les écrans moyens */
+    }
+    .container {
+        width: 90%; /* Prend plus de place, mais reste aéré */
+        margin: 0 auto;
+    }
+}
+
+/* Pour les petits écrans (moins de 768px) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px; /* Réduit la taille de la police sur mobile */
+    }
+    .container {
+        width: 95%; /* Prend presque toute la largeur de l'écran */
+        margin: 0 auto;
+    }
+    .bouton {
+        padding: 8px 16px; /* Réduit la taille des boutons sur mobile */
+        font-size: 14px;
+    }
+}
+
+
