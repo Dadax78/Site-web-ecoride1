@@ -70,7 +70,7 @@
                 </div>
             </nav>
         
-            <!-- Page de gestion du covoiturage -->
+<!-- Page de gestion du covoiturage -->
             <main class="container mt-5">
                 <h1 class="text-center mb-4">Démarrer / Arrêter le Covoiturage</h1>
         
@@ -87,23 +87,97 @@
                                 <p><strong>Véhicule :</strong> Tesla Model S</p>
                                 <p><strong>Passagers :</strong> 2</p>
                                 
-                                <!-- Boutons pour démarrer et arrêter le covoiturage -->
-                                <div id="startStopSection">
-                                    <button id="startButton" class="btn btn-success" onclick="startRide()">Démarrer le covoiturage</button>
-                                    <button id="stopButton" class="btn btn-danger" onclick="endRide()" style="display: none;">Arrêter le covoiturage</button>
-                                </div>
-        
-                                <!-- Afficher l'état du covoiturage -->
-                                <p id="rideStatus" class="mt-3"><strong>État :</strong> Non démarré</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-     
+<!-- Boutons pour démarrer et arrêter le covoiturage -->
+
+<button id="startButton" class="btn btn-success" onclick="startRide()">
+Démarrer le covoiturage
+</button>
+
+<button id="stopButton"
+class="btn btn-danger"
+onclick="endRide()"
+style="display:none">
+Arrêter le covoiturage
+</button>
+
+<p id="rideStatus" class="mt-3">
+<strong>État :</strong> Non démarré
+</p>
+
+<p id="timer">
+<strong>Chronomètre :</strong> 00:00:00
+</p>
+
+</div>
+
+</div>
+
+</main>
+
+<script>
+// DEMARRER COVOITURAGE
+
+function startRide(){
+
+rideStatus = "En cours"
+
+document.getElementById("rideStatus").innerHTML =
+"<strong>État :</strong> " + rideStatus
+
+document.getElementById("startButton").style.display="none"
+document.getElementById("stopButton").style.display="inline-block"
+
+startTimer()
+
+alert("Le covoiturage a commencé")
+
+}
+
+
+// ARRETER COVOITURAGE
+
+function endRide(){
+
+rideStatus = "Terminé"
+
+document.getElementById("rideStatus").innerHTML =
+"<strong>État :</strong> " + rideStatus
+
+document.getElementById("stopButton").style.display="none"
+
+clearInterval(timerInterval)
+
+alert("Le covoiturage est terminé")
+
+}
+
+
+// CHRONOMETRE
+
+function startTimer(){
+
+timerInterval = setInterval(function(){
+
+seconds++
+
+let hrs = Math.floor(seconds / 3600)
+let mins = Math.floor((seconds % 3600) / 60)
+let secs = seconds % 60
+
+document.getElementById("timer").innerHTML =
+"<strong>Chronomètre :</strong> " +
+String(hrs).padStart(2,'0') + ":" +
+String(mins).padStart(2,'0') + ":" +
+String(secs).padStart(2,'0')
+
+},1000)
+
+}
+
+</script>
   
 
-            <!-- Pied de page -->
+<!-- Pied de page -->
             <footer class="text-center bg-dark text-white py-4 mt-5">
                 <p>Contactez-nous : <a href="mailto:contact@ecoride.com" class="text-info">contact@ecoride.com</a></p>
             </footer>
@@ -113,4 +187,7 @@
         </body>
         </html>
         
+       
+        
+
        
